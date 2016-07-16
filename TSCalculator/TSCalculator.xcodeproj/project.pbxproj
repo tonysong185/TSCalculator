@@ -14,6 +14,7 @@
 		1A5284A31D27AFE90068A4F8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1A5284A11D27AFE90068A4F8 /* LaunchScreen.storyboard */; };
 		1A5284F81D2A379A0068A4F8 /* TSCalculatorUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5284F71D2A379A0068A4F8 /* TSCalculatorUITests.swift */; };
 		1A5285061D2A37A40068A4F8 /* TSCalculatorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A5285051D2A37A40068A4F8 /* TSCalculatorTests.swift */; };
+		1AAD2F461D3A8607000D97DF /* TSCalculatorBrain.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1AAD2F451D3A8607000D97DF /* TSCalculatorBrain.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -47,6 +48,7 @@
 		1A5285031D2A37A40068A4F8 /* TSCalculatorTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TSCalculatorTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1A5285051D2A37A40068A4F8 /* TSCalculatorTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TSCalculatorTests.swift; sourceTree = "<group>"; };
 		1A5285071D2A37A40068A4F8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1AAD2F451D3A8607000D97DF /* TSCalculatorBrain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TSCalculatorBrain.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				1A52849A1D27AFE90068A4F8 /* TSCalculatorController.swift */,
+				1AAD2F451D3A8607000D97DF /* TSCalculatorBrain.swift */,
 				1A52849C1D27AFE90068A4F8 /* Main.storyboard */,
 				1A5284AA1D27B11F0068A4F8 /* Supporting Files */,
 			);
@@ -195,12 +198,14 @@
 		1A52848D1D27AFE90068A4F8 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
+				CLASSPREFIX = TS;
 				LastSwiftUpdateCheck = 0730;
 				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = TonySong;
 				TargetAttributes = {
 					1A5284941D27AFE90068A4F8 = {
 						CreatedOnToolsVersion = 7.3;
+						DevelopmentTeam = L69EWG2AYC;
 					};
 					1A5284F41D2A379A0068A4F8 = {
 						CreatedOnToolsVersion = 7.3;
@@ -266,6 +271,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1AAD2F461D3A8607000D97DF /* TSCalculatorBrain.swift in Sources */,
 				1A52849B1D27AFE90068A4F8 /* TSCalculatorController.swift in Sources */,
 				1A5284991D27AFE90068A4F8 /* AppDelegate.swift in Sources */,
 			);
@@ -412,10 +418,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TSCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.PwC.TSCalculator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonysong.TSCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Debug;
 		};
@@ -424,10 +432,12 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = TSCalculator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.PwC.TSCalculator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tonysong.TSCalculator;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 			};
 			name = Release;
 		};
@@ -496,6 +506,7 @@
 				1A5284A91D27AFE90068A4F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A5284FC1D2A379A0068A4F8 /* Build configuration list for PBXNativeTarget "TSCalculatorUITests" */ = {
 			isa = XCConfigurationList;
@@ -504,6 +515,7 @@
 				1A5284FE1D2A379A0068A4F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1A52850A1D2A37A40068A4F8 /* Build configuration list for PBXNativeTarget "TSCalculatorTests" */ = {
 			isa = XCConfigurationList;
@@ -512,6 +524,7 @@
 				1A52850C1D2A37A40068A4F8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
